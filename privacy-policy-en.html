@@ -14,29 +14,220 @@
       <a href="support-en.html">Support</a>
       <a href="privacy-policy-tr.html" lang="tr">Türkçe</a>
     </nav>
+
     <h1>Niyaz Privacy Policy</h1>
-    <p class="meta">Last updated: September 3, 2026</p>
-    <p>Niyaz is a spiritual journal application provided by Niyaz Mobile that processes data primarily on the user’s device. The application has no user account system, Niyaz-operated backend, or cloud synchronization.</p>
-    <h2>Data stored locally</h2>
-    <p>Prayer tracking, Quran goals, reading position, bookmarks, favorite surahs, per-surah reading positions, favorite hadith records, personal prayers, Spiritual Journal entries, dhikr counters, theme selection, and notification preferences are stored on the device. The application is configured to exclude its data from Android operating system cloud backup and device-to-device transfer.</p>
-    <h2>Location and notifications</h2>
-    <p>If the user optionally enables Device Location, approximate or precise device location may be used to calculate prayer times and the Qibla direction on the device. This information is not sent to a server operated by Niyaz. Users may instead enter a city or coordinates manually. Device Location first requests foreground access; on Android, background location is requested separately and progressively for automatic travel updates. If enabled, the operating system's low-power significant-location events refresh prayer times, future notifications, and related widget state on the device. Niyaz does not perform continuous, high-frequency GPS tracking or retain routes or location history.</p>
-    <p>Notification permission is optional. If exact alarm access is unavailable, the application uses inexact scheduling that may be delayed by the operating system.</p>
-    <p>If enabled by the user, the Lock Screen Spiritual Card can show the next prayer, a short daily-content excerpt, or the selected dhikr count in an Android or iOS Home Screen widget, a supported Lock Screen widget, a system notification, or a user-started Live Activity. Visibility is subject to device privacy settings. The iOS App Group and Android private app storage contain only a minimum snapshot and pending +1 Dhikr operations; coordinates, personal prayers, notes, and worship history are excluded.</p>
-    <h2>External applications and services</h2>
-    <p>The user chooses the destination application when sharing content. In the “Nearby Mosques” feature, after explicit confirmation, a search query and optional approximate coordinates may be sent to a map application or Google Maps web page. Those external services are governed by their own privacy terms.</p>
-    <h2>Content sources</h2>
-    <p>The bundled content uses Tanzil Uthmani 1.1 for the Arabic Quran text, QuranEnc Rowwad 1.0.4 for the Turkish translation, and the HadeethEnc Turkish v1.63.0 collection for 2,150 hadith records. Optional Tajweed colors use the bundled and validated Quran Foundation <code>text_uthmani_tajweed</code> data and are off by default. Reading activity is not sent to these sources. Quran Foundation attribution: “Quran data provided by Quran Foundation.” Content versions and other attribution information are available in the application’s “Content Sources” screen.</p>
-    <p>This release has no production Quran audio, streaming, audio downloads, or background-media data flow.</p>
-    <h2>Advertising, analytics, and tracking</h2>
-    <p>This release contains no advertising, AdMob, analytics, crash reporting, or user-tracking SDK. Religious usage activity is not sent by Niyaz to an external user profile.</p>
-    <h2>Deleting data</h2>
-    <p>The <strong>Settings &gt; Reset data</strong> option deletes user preferences, SQLite records, and pending Niyaz notifications. Uninstalling the application also removes local application data from the device.</p>
-    <h2>Product limitations</h2>
-    <p>Niyaz does not provide medical, legal, professional advisory, or religious ruling services. The application’s store target audience is age 13 and over.</p>
-    <h2>Contact</h2>
+    <p class="meta">Last updated: September 4, 2026</p>
+
+    <p>
+      This Privacy Policy explains how the Niyaz – Spiritual Journal mobile
+      application handles personal information and device data. Niyaz is
+      designed to operate primarily on-device, without requiring a user
+      account, and to minimize data collection.
+    </p>
+
+    <h2>1. User accounts</h2>
+    <p>
+      Niyaz does not create user accounts and does not require users to sign
+      in with a name, email address, phone number, or password.
+    </p>
+
+    <p>
+      OAuth authentication used with Quran Foundation is strictly
+      server-to-server authentication between Niyaz infrastructure and Quran
+      Foundation services. It is not a user login or user account.
+    </p>
+
+    <h2>2. Location data</h2>
+    <p>
+      Niyaz may optionally access approximate or precise device location to
+      calculate prayer times. Users may choose manual location instead of
+      Phone Location.
+    </p>
+
+    <p>
+      When Phone Location is enabled and the user grants the required
+      permissions, Android may notify Niyaz of a significant location change
+      while the app is not in use. Niyaz may then update prayer times and
+      future prayer notifications for the new location.
+    </p>
+
+    <p>
+      Niyaz does not continuously track GPS location, does not create a route
+      history, and does not store location history on Niyaz servers. Prayer
+      time calculations are performed on the device.
+    </p>
+
+    <p>
+      Phone location or precise GPS coordinates are not sent to the Quran
+      audio service.
+    </p>
+
+    <h2>3. Quran audio</h2>
+    <p>
+      When a user uses the Quran audio feature, the content request required
+      for the selected chapter or verse is sent over a secure HTTPS
+      connection to the Niyaz server-side audio service.
+    </p>
+
+    <p>
+      The request is processed only to provide the Quran audio content and
+      timing information requested by the user. Location data, prayer
+      history, personal prayer text, and user account information are not
+      sent to this service.
+    </p>
+
+    <p>
+      Quran audio requests are not used to create user profiles, serve
+      advertising, or perform behavioral analytics.
+    </p>
+
+    <p>
+      For security and abuse prevention, the service may temporarily process
+      technical network information such as an IP address. This information
+      is not used to build a persistent user profile. Default persistent
+      storage of Cloud Run request logs for the Niyaz Quran audio service has
+      been disabled.
+    </p>
+
+    <p>
+      Quran audio and Quran-related data may be provided through Quran
+      Foundation services. Quran Foundation API credentials are stored only
+      on the server and are not embedded in the mobile application.
+    </p>
+
+    <p>
+      Quran data provided by Quran Foundation.
+    </p>
+
+    <h2>4. Temporary offline audio</h2>
+    <p>
+      In supported or testing versions where Quran audio is enabled, users
+      may temporarily download selected audio content to their device.
+      Temporary audio retention is limited to a maximum of 7 days.
+    </p>
+
+    <p>
+      Long-term or permanent offline Quran audio storage is currently
+      disabled.
+    </p>
+
+    <h2>5. App interactions</h2>
+    <p>
+      When Quran audio is used, necessary app interactions such as the
+      selected chapter or verse may be transmitted temporarily to the Niyaz
+      audio service in order to provide the requested content.
+    </p>
+
+    <p>
+      These interactions are not used for advertising, marketing,
+      personalization, or user profiling.
+    </p>
+
+    <h2>6. Data stored locally</h2>
+    <p>
+      Niyaz may store application preferences, selected manual location,
+      worship records, dhikr information, Quran reading position, bookmarks,
+      and notification settings locally on the user's device.
+    </p>
+
+    <p>
+      Niyaz does not upload these records to a centralized Niyaz user account
+      or Niyaz server.
+    </p>
+
+    <p>
+      Users may delete local records using
+      <strong>Settings &gt; Reset data</strong>.
+    </p>
+
+    <h2>7. Notifications</h2>
+    <p>
+      With user permission, Niyaz may use device notifications for prayer
+      times and other local reminders. Notification scheduling is performed
+      on the device.
+    </p>
+
+    <h2>8. Analytics, advertising, and tracking</h2>
+    <p>
+      Niyaz currently does not use AdMob, third-party advertising networks,
+      behavioral advertising, or third-party user behavior analytics.
+    </p>
+
+    <p>
+      Niyaz does not track users across other apps or websites and does not
+      sell personal data for advertising purposes.
+    </p>
+
+    <h2>9. Hadith and Quran content</h2>
+    <p>
+      Niyaz may include 2,150 Turkish HadeethEnc hadith records. Quran text
+      and related content are provided from licensed or otherwise permitted
+      data sources.
+    </p>
+
+    <p>
+      Verified Quran data provided by Quran Foundation may be used for
+      Tajweed rendering. Tajweed is disabled by default and may be enabled by
+      the user.
+    </p>
+
+    <h2>10. Diyanet content</h2>
+    <p>
+      Niyaz does not distribute Diyanet Elif-Ba text, images, or audio as
+      part of the application.
+    </p>
+
+    <p>
+      The “Diyanet” option in the application refers only to a prayer time
+      calculation method and does not indicate that Diyanet Elif-Ba content
+      is included in the application.
+    </p>
+
+    <h2>11. Third-party services</h2>
+    <p>
+      The Quran audio feature may use a Niyaz backend hosted on Google Cloud
+      Run and Quran Foundation services.
+    </p>
+
+    <p>
+      Only the minimum technical information required to provide the
+      requested feature is sent to these services.
+    </p>
+
+    <h2>12. Data security</h2>
+    <p>
+      Supported network communications between Niyaz and its backend are
+      encrypted using HTTPS/TLS.
+    </p>
+
+    <p>
+      Quran Foundation client credentials and secrets are not stored in the
+      mobile application.
+    </p>
+
+    <h2>13. Children's privacy</h2>
+    <p>
+      Niyaz is not designed to intentionally collect personal information
+      from children. The application does not create user accounts and does
+      not request a child's name, email address, or phone number.
+    </p>
+
+    <h2>14. Changes to this Privacy Policy</h2>
+    <p>
+      This Privacy Policy may be updated when application features or data
+      handling practices change. The current version will be published on
+      this page.
+    </p>
+
+    <h2>15. Contact</h2>
+    <p>
+      For questions about privacy or Niyaz data practices, contact:
+      <a href="mailto:niyaz.app.support@gmail.com">
+        niyaz.app.support@gmail.com
+      </a>
+    </p>
+
     <p>Developer: Niyaz Mobile</p>
-    <p>Email: <a href="mailto:niyaz.app.support@gmail.com">niyaz.app.support@gmail.com</a></p>
   </main>
 </body>
 </html>
