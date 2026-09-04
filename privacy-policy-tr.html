@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Niyaz – Manevi Günlük uygulamasının gizlilik politikası.">
+  <meta name="description" content="Niyaz – Manevi Günlük mobil uygulaması gizlilik politikası.">
   <title>Niyaz Gizlilik Politikası</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,29 +14,215 @@
       <a href="support-tr.html">Destek</a>
       <a href="privacy-policy-en.html" lang="en">English</a>
     </nav>
+
     <h1>Niyaz Gizlilik Politikası</h1>
-    <p class="meta">Son güncelleme: 3 Eylül 2026</p>
-    <p>Niyaz, Niyaz Mobile tarafından sunulan, verileri öncelikle kullanıcının cihazında işleyen bir manevi günlük uygulamasıdır. Uygulamada kullanıcı hesabı, Niyaz tarafından işletilen bir sunucu veya bulut senkronizasyonu bulunmaz.</p>
-    <h2>Yerel olarak saklanan veriler</h2>
-    <p>Namaz takibi, Kur’an hedefleri, okuma konumu, yer imleri, favori sureler, sure bazlı son konumlar, favori hadisler, kişisel dualar, Manevi Günlük kayıtları, zikirmatik kayıtları, tema seçimi ve bildirim tercihleri cihazda saklanır. Uygulama verileri Android işletim sistemi yedeklemesi ve cihazlar arası aktarım dışında tutulacak şekilde yapılandırılmıştır.</p>
-    <h2>Konum ve bildirimler</h2>
-    <p>Kullanıcı Telefon Konumu'nu isteğe bağlı olarak etkinleştirirse yaklaşık veya kesin cihaz konumu, namaz vakitlerini ve kıble yönünü cihaz üzerinde hesaplamak için kullanılabilir. Bu bilgi Niyaz tarafından işletilen bir sunucuya gönderilmez. Kullanıcı dilerse şehir veya koordinat bilgisini manuel olarak girebilir. Telefon Konumu önce uygulama kullanımında konum izni ister; Android'de seyahatte otomatik güncelleme için arka plan konumu ayrı ve aşamalı olarak istenir. Bu seçenek açılırsa işletim sisteminin düşük güç tüketimli anlamlı konum değişikliği olayları namaz vakitlerini, gelecekteki bildirimleri ve ilgili widget durumunu cihazda yeniler. Sürekli ve yüksek frekanslı GPS takibi yapılmaz; rota veya konum geçmişi tutulmaz.</p>
-    <p>Bildirim izni isteğe bağlıdır. Kesin alarm erişimi verilmezse, işletim sisteminin geciktirebileceği yaklaşık zamanlı bildirim planlaması kullanılır.</p>
-    <p>Kullanıcı isterse Kilit Ekranı Manevi Kartı ile sıradaki namazı, kısa günlük içeriği veya seçili zikirmatik sayacını Android/iOS ana ekran widget’ı, desteklenen cihazlarda kilit ekranı widget’ı, sistem bildirimi ya da kullanıcı başlatmalı Live Activity içinde gösterebilir. Görünürlük cihazın gizlilik ayarlarına bağlıdır. iOS App Group ve Android uygulama özel alanında yalnız minimum snapshot ve bekleyen +1 Zikir işlemleri yerel saklanır; koordinat, kişisel dua, not ve ibadet geçmişi bu alana yazılmaz.</p>
-    <h2>Dış uygulamalar ve hizmetler</h2>
-    <p>Paylaşım işlemlerinde hedef uygulamayı kullanıcı seçer. “Yakındaki Camiler” özelliğinde kullanıcı açıkça onay verirse arama sorgusu ve isteğe bağlı yaklaşık koordinat bilgisi bir harita uygulamasına veya Google Maps web sayfasına aktarılabilir. Bu dış hizmetlerin kendi gizlilik koşulları geçerlidir.</p>
-    <h2>İçerik kaynakları</h2>
-    <p>Arapça Kur’an metni Tanzil Uthmani 1.1, Türkçe meal QuranEnc Rowwad 1.0.4 ve 2.150 hadis HadeethEnc Türkçe v1.63.0 kaynaklı paket içi içeriklerdir. İsteğe bağlı tecvid renkleri paket içindeki doğrulanmış Quran Foundation <code>text_uthmani_tajweed</code> verisini kullanır ve varsayılan olarak kapalıdır. Okuma davranışı bu kaynaklara gönderilmez. Quran Foundation atfı: “Quran data provided by Quran Foundation.” İçerik sürümleri ve diğer atıf bilgileri uygulamadaki “İçerik Kaynakları” ekranında gösterilir.</p>
-    <p>Bu sürüm production Kur’an sesi, streaming, ses indirme veya arka plan medya aktarımı içermez.</p>
-    <h2>Reklam, analiz ve kullanıcı takibi</h2>
-    <p>Bu sürüm reklam, AdMob, analiz, çökme raporlama veya kullanıcı takip SDK’sı içermez. Dinî kullanım davranışları Niyaz tarafından dış bir kullanıcı profiline aktarılmaz.</p>
-    <h2>Verilerin silinmesi</h2>
-    <p>Uygulamadaki <strong>Ayarlar &gt; Verileri sıfırla</strong> seçeneği; kullanıcı tercihlerini, SQLite kayıtlarını ve bekleyen Niyaz bildirimlerini siler. Uygulamayı kaldırmak da cihazdaki yerel uygulama verilerini kaldırır.</p>
-    <h2>Ürün sınırları</h2>
-    <p>Niyaz; sağlık, hukuk, profesyonel danışmanlık veya dinî fetva hizmeti sunmaz. Uygulamanın mağaza hedef kitlesi 13 yaş ve üzeridir.</p>
-    <h2>İletişim</h2>
+    <p class="meta">Son güncelleme: 4 Eylül 2026</p>
+
+    <p>
+      Bu gizlilik politikası, Niyaz – Manevi Günlük mobil uygulamasının
+      kişisel verileri ve cihaz verilerini nasıl kullandığını açıklar.
+      Niyaz mümkün olduğunca cihaz üzerinde çalışan, kullanıcı hesabı
+      gerektirmeyen ve veri toplamayı en aza indiren bir uygulama olarak
+      tasarlanmıştır.
+    </p>
+
+    <h2>1. Kullanıcı hesabı</h2>
+    <p>
+      Niyaz kullanıcı hesabı oluşturmaz ve kullanıcıdan ad, e-posta adresi,
+      telefon numarası veya parola ile uygulamaya giriş yapmasını istemez.
+      Quran Foundation ile kullanılan OAuth kimlik doğrulaması yalnızca
+      Niyaz sunucusu ile Quran Foundation servisleri arasındaki sunucu
+      tarafı teknik kimlik doğrulamasıdır ve kullanıcı hesabı değildir.
+    </p>
+
+    <h2>2. Konum verisi</h2>
+    <p>
+      Niyaz, namaz vakitlerini hesaplamak için isteğe bağlı olarak cihazın
+      yaklaşık veya kesin konumuna erişebilir. Kullanıcı dilerse telefon
+      konumu yerine manuel konum seçebilir.
+    </p>
+
+    <p>
+      Telefon Konumu özelliği etkinleştirildiğinde ve kullanıcı gerekli
+      izinleri verdiğinde, Android işletim sistemi arka planda anlamlı bir
+      konum değişikliği algıladığında Niyaz namaz vakitlerini ve gelecekteki
+      namaz bildirimlerini yeni konuma göre güncelleyebilir.
+    </p>
+
+    <p>
+      Niyaz sürekli GPS takibi yapmaz, rota geçmişi oluşturmaz ve konum
+      geçmişini Niyaz sunucularında saklamaz. Namaz vakti hesaplaması cihaz
+      üzerinde yapılır.
+    </p>
+
+    <p>
+      Telefon konumu veya kesin GPS koordinatları Sesli Kur'an hizmetine
+      gönderilmez.
+    </p>
+
+    <h2>3. Sesli Kur'an</h2>
+    <p>
+      Kullanıcı Sesli Kur'an özelliğini kullandığında, seçilen sure veya ayet
+      için gerekli içerik isteği güvenli HTTPS bağlantısı üzerinden Niyaz'ın
+      sunucu tarafı ses hizmetine iletilir.
+    </p>
+
+    <p>
+      Bu istek yalnızca kullanıcının istediği Kur'an ses içeriğini ve gerekli
+      zamanlama bilgisini sağlamak amacıyla işlenir. Kullanıcının konum verisi,
+      ibadet geçmişi, kişisel dua metinleri veya kullanıcı hesabı bilgileri bu
+      hizmete gönderilmez.
+    </p>
+
+    <p>
+      Sesli Kur'an istekleri kullanıcı profili oluşturmak, reklam göstermek
+      veya davranışsal analiz yapmak amacıyla kullanılmaz.
+    </p>
+
+    <p>
+      Sunucu, güvenlik ve kötüye kullanımın önlenmesi amacıyla bağlantıya ait
+      teknik ağ bilgisini, örneğin IP adresini, yalnızca geçici olarak
+      işleyebilir. Bu bilgi kalıcı kullanıcı profili oluşturmak için
+      kullanılmaz. Niyaz'ın Cloud Run istek loglarının varsayılan kalıcı
+      saklanması devre dışı bırakılmıştır.
+    </p>
+
+    <p>
+      Ses içeriği ve Kur'an verileri Quran Foundation servislerinden
+      sağlanabilir. Quran Foundation API erişim anahtarları yalnızca sunucu
+      tarafında güvenli biçimde saklanır ve mobil uygulamanın içine
+      yerleştirilmez.
+    </p>
+
+    <p>
+      Quran data provided by Quran Foundation.
+    </p>
+
+    <h2>4. Geçici çevrimdışı ses içeriği</h2>
+    <p>
+      Sesli Kur'an özelliği etkin olan test veya desteklenen sürümlerde,
+      kullanıcı seçtiği ses içeriğini geçici olarak cihazına indirebilir.
+      Bu geçici ses içeriğinin saklama süresi en fazla 7 gündür.
+    </p>
+
+    <p>
+      Uzun süreli veya kalıcı çevrimdışı ses arşivi şu anda etkin değildir.
+    </p>
+
+    <h2>5. Uygulama etkileşimleri</h2>
+    <p>
+      Sesli Kur'an kullanıldığında seçilen sure veya ayet gibi gerekli
+      uygulama etkileşimleri, istenen içeriği sağlayabilmek için geçici olarak
+      Niyaz ses hizmetine iletilebilir.
+    </p>
+
+    <p>
+      Bu etkileşimler reklam, pazarlama, kişiselleştirme veya kullanıcı
+      profilleme amacıyla kullanılmaz.
+    </p>
+
+    <h2>6. Yerel olarak saklanan veriler</h2>
+    <p>
+      Niyaz; uygulama tercihleri, seçilen manuel konum, ibadet kayıtları,
+      zikir bilgileri, Kur'an okuma konumu, yer imleri ve bildirim ayarları
+      gibi verileri cihaz üzerinde yerel olarak saklayabilir.
+    </p>
+
+    <p>
+      Bu veriler Niyaz tarafından merkezi bir kullanıcı hesabına veya Niyaz
+      sunucusuna yüklenmez.
+    </p>
+
+    <p>
+      Kullanıcı uygulama içindeki
+      <strong>Ayarlar &gt; Verileri sıfırla</strong> seçeneğini kullanarak
+      yerel verileri silebilir.
+    </p>
+
+    <h2>7. Bildirimler</h2>
+    <p>
+      Niyaz, kullanıcı izin verdiğinde namaz vakitleri ve diğer yerel
+      hatırlatmalar için cihaz bildirimlerini kullanabilir.
+      Bildirim planlaması cihaz üzerinde gerçekleştirilir.
+    </p>
+
+    <h2>8. Analitik, reklam ve takip</h2>
+    <p>
+      Niyaz şu anda kullanıcı davranışını izleyen üçüncü taraf reklam ağı,
+      AdMob, reklam profillemesi veya kullanıcı davranış analitiği kullanmaz.
+    </p>
+
+    <p>
+      Niyaz kullanıcıları farklı uygulama veya web siteleri arasında takip
+      etmez ve reklam amacıyla kişisel veri satmaz veya paylaşmaz.
+    </p>
+
+    <h2>9. Hadis ve Kur'an içeriği</h2>
+    <p>
+      Niyaz uygulamasında 2.150 HadeethEnc Türkçe hadis kaydı bulunabilir.
+      Kur'an metni ve ilgili içerikler uygulamanın lisanslı veya izin verilen
+      veri kaynaklarından sağlanır.
+    </p>
+
+    <p>
+      Tecvid gösterimi için Quran Foundation tarafından sağlanan doğrulanmış
+      Kur'an verileri kullanılabilir. Tecvid özelliği varsayılan olarak
+      kapalıdır ve kullanıcı tarafından etkinleştirilebilir.
+    </p>
+
+    <h2>10. Diyanet içeriği</h2>
+    <p>
+      Niyaz, Diyanet İşleri Başkanlığına ait Elif-Ba metin, görsel veya ses
+      içeriklerini uygulamanın bir parçası olarak dağıtmaz.
+    </p>
+
+    <p>
+      Uygulamadaki “Diyanet” seçeneği yalnızca namaz vakti hesaplama
+      yöntemlerinden birinin adıdır ve Diyanet'e ait Elif-Ba içeriğinin
+      uygulamada kullanıldığı anlamına gelmez.
+    </p>
+
+    <h2>11. Üçüncü taraf hizmetleri</h2>
+    <p>
+      Sesli Kur'an özelliğinin çalışması için Niyaz'ın Google Cloud Run
+      üzerinde çalışan sunucu hizmeti ve Quran Foundation servisleri
+      kullanılabilir.
+    </p>
+
+    <p>
+      Bu hizmetlere yalnızca ilgili özelliğin çalışması için gerekli minimum
+      teknik bilgi gönderilir.
+    </p>
+
+    <h2>12. Veri güvenliği</h2>
+    <p>
+      Niyaz ile sunucu arasındaki desteklenen ağ iletişimi HTTPS/TLS üzerinden
+      şifrelenir. Quran Foundation istemci kimliği ve gizli anahtarı mobil
+      uygulamanın içinde saklanmaz.
+    </p>
+
+    <h2>13. Çocukların gizliliği</h2>
+    <p>
+      Niyaz çocuklardan bilerek kişisel bilgi toplamak amacıyla
+      tasarlanmamıştır. Uygulama kullanıcı hesabı oluşturmaz ve çocuklardan
+      isim, e-posta veya telefon numarası istemez.
+    </p>
+
+    <h2>14. Gizlilik politikasındaki değişiklikler</h2>
+    <p>
+      Uygulamanın özellikleri veya veri işleme davranışı değişirse bu gizlilik
+      politikası güncellenebilir. Güncel sürüm bu sayfada yayımlanır.
+    </p>
+
+    <h2>15. İletişim</h2>
+    <p>
+      Gizlilik veya uygulamanın veri kullanımıyla ilgili sorularınız için:
+      <a href="mailto:niyaz.app.support@gmail.com">
+        niyaz.app.support@gmail.com
+      </a>
+    </p>
+
     <p>Geliştirici: Niyaz Mobile</p>
-    <p>E-posta: <a href="mailto:niyaz.app.support@gmail.com">niyaz.app.support@gmail.com</a></p>
   </main>
 </body>
 </html>
